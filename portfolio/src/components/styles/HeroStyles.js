@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeroStyle = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
   margin-top: 150px;
   h1 {
@@ -16,4 +16,13 @@ export const HeroStyle = styled.div`
   span {
     font-size: 72px;
   }
+`;
+
+export const TagLine = styled.div`
+  text-align: left;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 48px;
+  margin: 0 auto;
+  padding: 0 15px;
 `;

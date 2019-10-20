@@ -1,20 +1,48 @@
 import styled from 'styled-components';
 
-export const VerticalNavStyle = styled.nav`
+const Links = styled.nav`
+  a {
+    font-size: 20px;
+    margin: 0 50px;
+    padding: 0 2px;
+    color: #fff;
+
+    background-image: linear-gradient(#fff, #fff);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
+
+    &:hover,
+    &:focus {
+      background-size: 100% 1px;
+    }
+  }
+`;
+
+export const VerticalNavStyle = styled(Links)`
   position: fixed;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
   margin-right: 80px;
   top: 10vw;
   right: 0;
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: right top 10vw;
   font-weight: 100;
+`;
+
+export const MainNavStyles = styled(Links)`
+  margin-top: 100px;
+  padding: 0 10px;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
 
   a {
-    font-size: 20px;
-    margin: 50px 0;
-    padding: 0 10px;
-    color: #ffffff;
+    margin: 0;
+    padding-bottom: 5px;
   }
 `;

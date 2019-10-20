@@ -56,12 +56,3 @@ export const Wrapper = styled.div`
   width: 800px;
   margin: 0 auto;
 `;
-
-export const TagLine = styled.div`
-  text-align: left;
-  color: #ffffff;
-  width: 560px;
-  font-weight: 200;
-  font-size: 48px;
-  margin: 0 auto;
-`;

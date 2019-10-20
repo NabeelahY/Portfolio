@@ -1,7 +1,8 @@
 import React from 'react';
-import { GlobalStyle, TagLine, Wrapper } from './AppStyles';
+import { GlobalStyle, Wrapper } from './AppStyles';
 import Hero from './components/Hero';
 import Nav from './components/VerticalNav';
+import MainNav from './components/MainNav';
 
 const App = () => {
   return (
@@ -10,10 +11,8 @@ const App = () => {
       <Wrapper>
         <Hero />
         <Nav />
+        <MainNav />
       </Wrapper>
-      <TagLine>I'm Nabeelah Yousuph</TagLine>
-
-      
     </>
   );
 };
