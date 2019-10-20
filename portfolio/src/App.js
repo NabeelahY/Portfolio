@@ -1,16 +1,16 @@
 import React from 'react';
-import { GlobalStyle, HeroStyle, TagLine } from './AppStyles';
+import { GlobalStyle, TagLine, Wrapper } from './AppStyles';
+import Hero from './components/Hero';
+import Nav from './components/VerticalNav';
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <HeroStyle>
-        <h1>Hello</h1>
-        <span role='img' aria-label='wave'>
-          👋🏽
-        </span>
-      </HeroStyle>
+      <Wrapper>
+        <Hero />
+        <Nav />
+      </Wrapper>
       <TagLine>I'm Nabeelah Yousuph</TagLine>
 
       

@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Oswald|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400|Righteous&display=swap');
     body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        text-decoration: none;
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
@@ -51,30 +52,16 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const HeroStyle = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin-top: 150px;
-  h1 {
-    text-align: center;
-    font-family: 'Righteous', cursive;
-    font-size: 230px;
-    background: linear-gradient(180deg, #ffffff 40%, #a9a8ed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  span {
-    font-size: 72px;
-  }
+export const Wrapper = styled.div`
+  width: 800px;
+  margin: 0 auto;
 `;
 
 export const TagLine = styled.div`
   text-align: left;
   color: #ffffff;
   width: 560px;
-  font-weight: 50;
+  font-weight: 200;
   font-size: 48px;
   margin: 0 auto;
 `;
