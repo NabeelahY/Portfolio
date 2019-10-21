@@ -35,15 +35,15 @@ export const InfoWrapper = styled.section`
 
 export const AboutStyle = styled.div`
   display: flex;
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-  }
+  // h3 {
+  //   font-size: 18px;
+  //   font-weight: bold;
+  // }
   width: 100%;
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 2;
 `;
 

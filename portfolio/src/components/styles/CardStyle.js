@@ -36,7 +36,7 @@ export const CardWrapper = styled.div`
     width: 350px;
     height: 200px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     left: -100%;
     top: -100%;
     transition: all 200ms linear;
