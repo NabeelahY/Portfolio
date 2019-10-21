@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'Oswald', sans-serif;
-        height: 100vh;
+        height: 120vh;
         background-image: linear-gradient(180deg, #3558D3, #FE8D8D);
         line-height: 1;
     }

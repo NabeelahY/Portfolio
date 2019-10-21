@@ -32,7 +32,7 @@ export const VerticalNavStyle = styled(Links)`
 `;
 
 export const MainNavStyles = styled(Links)`
-  margin-top: 100px;
+  margin: 100px auto 10px;
   padding: 0 10px;
   width: 570px;
   display: flex;

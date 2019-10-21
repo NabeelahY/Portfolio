@@ -3,9 +3,9 @@ import img from '../../assets/nab.JPG';
 
 export const InfoWrapper = styled.section`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
-  margin: 10px;
-  background-color: #fff;
-  width: 600px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 800px;
   border-radius: 5px;
   .fade-enter {
     opacity: 0.01;
@@ -27,6 +27,9 @@ export const InfoWrapper = styled.section`
 
   div.transition-group {
     position: relative;
+  }
+  section {
+    margin: 0 auto;
   }
 `;
 
