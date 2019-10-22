@@ -4,9 +4,7 @@ import img from '../../assets/nab.JPG';
 export const InfoWrapper = styled.section`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
   margin: 20px;
-  background: rgba(255, 255, 255, 0.5);
-  width: 800px;
-  border-radius: 5px;
+
   .fade-enter {
     opacity: 0.01;
   }
@@ -35,33 +33,43 @@ export const InfoWrapper = styled.section`
 
 export const AboutStyle = styled.div`
   display: flex;
-  // h3 {
-  //   font-size: 18px;
-  //   font-weight: bold;
-  // }
-  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 800px;
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 2;
+  h3 {
+    font-weight: 500;
+    margin: 10px 0;
+  }
 `;
 
 export const AboutImg = styled.div`
   width: 30%;
   background: url(${img}) center no-repeat;
   background-size: cover;
-  div {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    filter: saturate(0.7);
-    background: url(https://jaysalvat.github.io/vegas/releases/latest/overlays/14.png);
-  }
 `;
 
 export const ContentStyle = styled.div`
   width: 70%;
   margin: 10px;
+`;
+
+export const StackStyle = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  div {
+    margin: 20px;
+  }
+  svg {
+    font-size: 20px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
 `;

@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "nabeelah_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "react-icons": "^3.7.0",
     "styled-components": "^4.4.0"
   }
 }
