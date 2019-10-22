@@ -4,7 +4,7 @@ export const HeroStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 150px;
+  margin-top: 100px;
   h1 {
     text-align: center;
     font-family: 'Righteous', cursive;

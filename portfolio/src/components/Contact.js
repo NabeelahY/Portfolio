@@ -11,7 +11,15 @@ const Contact = () => {
         </span>
       </Title>
       <div>For work related enquries, shoot me an email:</div>
-      <p>nabeelahyousuph@gmail.com</p>
+      <p>
+        <a
+          href='mailto:nabeelahyousuph@gmail.com?subject=Hi there!&body=Hi 👋🏽.'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          nabeelahyousuph@gmail.com
+        </a>
+      </p>
     </ContactWrapper>
   );
 };

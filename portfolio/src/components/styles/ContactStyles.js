@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 800px;
   text-align: center;
   font-size: 24px;
   font-family: 'Josefin Sans', sans-serif;
@@ -11,6 +14,16 @@ export const ContactWrapper = styled.div`
   h3 {
     font-size: 28px;
     font-weight: bold;
+  }
+
+  p {
+    a {
+      color: #fff;
+    }
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 `;
 

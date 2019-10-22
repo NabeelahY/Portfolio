@@ -18,13 +18,11 @@ const Info = ({ location }) => {
             timeout={{ enter: 300, exit: 300 }}
             classNames='fade'
           >
-            <section>
-              <Switch location={location}>
-                <Route exact path='/' component={About} />
-                <Route path='/projects' component={Projects} />
-                <Route path='/contact' component={Contact} />
-              </Switch>
-            </section>
+            <Switch location={location}>
+              <Route exact path='/' component={About} />
+              <Route path='/projects' component={Projects} />
+              <Route path='/contact' component={Contact} />
+            </Switch>
           </CSSTransition>
         </TransitionGroup>
       </InfoWrapper>

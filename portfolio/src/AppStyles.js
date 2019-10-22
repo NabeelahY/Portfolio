@@ -30,9 +30,10 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
     }
     body {
+        display:flex; 
+         flex-direction:column; 
         font-family: 'Oswald', sans-serif;
-        height: 120vh;
-        background-image: linear-gradient(180deg, #3558D3, #FE8D8D);
+        background-image: linear-gradient(180deg, #000046, #1CB5E0);
         line-height: 1;
     }
     ol, ul {

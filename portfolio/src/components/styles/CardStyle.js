@@ -3,10 +3,13 @@ import styled from 'styled-components';
 export const ProjectWrapper = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
+  background: rgba(156, 195, 213, 0.5);
+  border-radius: 5px;
+  width: 400px;
 `;
 
 export const CardWrapper = styled.div`
@@ -43,7 +46,9 @@ export const CardWrapper = styled.div`
     transform: rotate(90deg);
     font-weight: 300;
     h2 {
-      margin: 20px 0;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
       text-align: center;
     }
     div {
