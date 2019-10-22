@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <ProjectWrapper>
       {projects.map(project => (
-        <CardWrapper>
+        <CardWrapper key={project.name}>
           <Cards projects={project} />
         </CardWrapper>
       ))}

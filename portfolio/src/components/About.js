@@ -62,7 +62,7 @@ const About = () => {
           <h3>Stacks include:</h3>
           <StackStyle>
             {stacks.map(stack => (
-              <div>
+              <div key={stack.name}>
                 <span>{stack.name}</span>
                 <span>{stack.icon}</span>
               </div>
