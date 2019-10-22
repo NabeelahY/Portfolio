@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Links = styled.nav`
   a {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 50px;
     padding: 0 2px;
     color: #fff;
@@ -23,12 +23,17 @@ const Links = styled.nav`
 export const VerticalNavStyle = styled(Links)`
   position: fixed;
   margin-right: 80px;
-  top: 10vw;
+  top: 15vw;
   right: 0;
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   transform-origin: right top 10vw;
   font-weight: 100;
+
+  svg {
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
 `;
 
 export const MainNavStyles = styled(Links)`
@@ -42,6 +47,7 @@ export const MainNavStyles = styled(Links)`
   font-weight: 200;
 
   a {
+    font-size: 18px;
     margin: 0;
     padding-bottom: 5px;
   }
