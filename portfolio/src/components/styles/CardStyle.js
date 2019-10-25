@@ -69,7 +69,8 @@ export const CardWrapper = styled.div`
       margin: 0 auto;
 
       &:hover {
-        font-size: scale(1.5);
+        color: #1CB5E0;
+        border: solid #1CB5E0 2px;
       }
     }
   }

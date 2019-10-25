@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../assets/nab.JPG';
+import img from '../../assets/nab.jpeg';
 
 export const InfoWrapper = styled.section`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');

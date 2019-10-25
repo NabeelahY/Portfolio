@@ -9,7 +9,6 @@ export const ContactWrapper = styled.div`
   font-size: 24px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 350;
-  padding: 20px;
   line-height: 2;
   h3 {
     font-size: 28px;

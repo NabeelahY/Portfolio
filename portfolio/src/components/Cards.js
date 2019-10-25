@@ -5,10 +5,12 @@ const Cards = ({ projects }) => {
   return (
     <>
       <img src={img} alt={name} />
-      <div class='content'>
+      <div className='content'>
         <h2>{name}</h2>
         <div>{desc}</div>
-        <a href={link}>View Project</a>
+        <a href={link} target='_blank' rel='noopener noreferrer'>
+          View Project
+        </a>
       </div>
     </>
   );
