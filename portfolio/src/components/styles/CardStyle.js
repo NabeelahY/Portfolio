@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './devices';
 
 export const ProjectWrapper = styled.div`
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap');
@@ -9,11 +10,11 @@ export const ProjectWrapper = styled.div`
   margin: 10px auto;
   background: rgba(156, 195, 213, 0.5);
   border-radius: 5px;
-  width: 400px;
+  max-width: 400px;
 `;
 
 export const CardWrapper = styled.div`
-  width: 350px;
+  max-width: 350px;
   height: 200px;
   overflow: hidden;
   margin: 20px;
@@ -36,8 +37,8 @@ export const CardWrapper = styled.div`
   }
 
   .content {
-    width: 350px;
-    height: 200px;
+    max-width: 100%;
+    height: 100%;
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
     left: -100%;
@@ -48,7 +49,7 @@ export const CardWrapper = styled.div`
     h2 {
       font-size: 18px;
       font-weight: bold;
-      margin: 15px 0;
+      margin: 10px 0;
       text-align: center;
     }
     div {
@@ -61,7 +62,7 @@ export const CardWrapper = styled.div`
       position: absolute;
       left: 0;
       text-align: center;
-      padding: 8px;
+      padding: 5px;
       color: #000;
       width: 100px;
       border: solid #000 1px;
@@ -69,8 +70,20 @@ export const CardWrapper = styled.div`
       margin: 0 auto;
 
       &:hover {
-        color: #1CB5E0;
-        border: solid #1CB5E0 2px;
+        color: #1cb5e0;
+        border: solid #1cb5e0 2px;
+      }
+    }
+    @media ${device.laptop} {
+      h2 {
+        font-size: 18px;
+        margin: 15px 0;
+      }
+      div {
+        font-size: 16px;
+      }
+      a {
+        padding: 8px;
       }
     }
   }
