@@ -12,14 +12,14 @@ export const GlobalStyle = createGlobalStyle`
     dl, dt, dd, ol, ul, li,
     fieldset, form, label, legend,
     table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
+    article, aside, canvas, details, embed,
     figure, figcaption, footer, header, hgroup, 
     menu, nav, output, ruby, section, summary,
     time, mark, audio, video {
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 100%;
+        font-size: 62.5%;
         font: inherit;
         vertical-align: baseline;
         text-decoration: none;
@@ -29,9 +29,11 @@ export const GlobalStyle = createGlobalStyle`
     footer, header, hgroup, menu, nav, section {
         display: block;
     }
+
     body {
         display:flex; 
-         flex-direction:column; 
+        height: 100%;
+        flex-direction:column;
         font-family: 'Oswald', sans-serif;
         background-image: linear-gradient(180deg, #000046, #1CB5E0);
         line-height: 1;
@@ -53,7 +55,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
+export const Main = styled.main`
+  min-height: 100%;
+`;
+
 export const Wrapper = styled.div`
-  width: 800px;
+  width: 70vw;
   margin: 0 auto;
+  padding-bottom: 100px;
 `;

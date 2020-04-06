@@ -1,29 +1,43 @@
 import styled from 'styled-components';
+import { device } from './devices';
+
+export const HeroWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+`;
 
 export const HeroStyle = styled.div`
   display: flex;
-  justify-content: center;
   align-items: baseline;
   margin-top: 100px;
   h1 {
-    text-align: center;
     font-family: 'Righteous', cursive;
-    font-size: 230px;
+    font-size: 6rem;
     background: linear-gradient(180deg, #ffffff 40%, #a9a8ed);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   span {
-    font-size: 72px;
+    font-size: 2rem;
+  }
+
+  @media ${device.laptop} {
+    h1 {
+      font-size: 230px;
+    }
+    span {
+      font-size: 4rem;
+    }
   }
 `;
 
 export const TagLine = styled.div`
-  width: 340px;
-  text-align: left;
   color: #ffffff;
+  padding: 0 5px;
+  font-size: 1.5rem;
   font-weight: 200;
-  font-size: 48px;
-  margin-left: 105px;
-  padding: 0 15px;
+  @media ${device.laptop} {
+    font-size: 3rem;
+  }
 `;
