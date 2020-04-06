@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         display:flex; 
-        height: 100%;
+        min-height: 100vh;
         flex-direction:column;
         font-family: 'Oswald', sans-serif;
         background-image: linear-gradient(180deg, #000046, #1CB5E0);
