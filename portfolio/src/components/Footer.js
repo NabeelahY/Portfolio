@@ -4,7 +4,7 @@ import { FooterStyle } from './styles/FooterStyles';
 const Footer = () => {
   return (
     <FooterStyle>
-      <p>2019 &copy; Designed by Nabeelah Yousuph</p>
+      <p> {new Date().getFullYear()} &copy; Designed by Nabeelah Yousuph</p>
     </FooterStyle>
   );
 };

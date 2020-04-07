@@ -7,7 +7,8 @@ import {
   FaNode,
   FaPython
 } from 'react-icons/fa';
-import postgres from '../assets/postgresql.svg';
+import { DiPostgresql } from 'react-icons/di';
+import graphql from '../assets/graphql.svg';
 import {
   AboutStyle,
   AboutImg,
@@ -19,14 +20,6 @@ const stacks = [
   {
     name: 'JavaScript',
     icon: <FaJs />
-  },
-  {
-    name: 'HTML',
-    icon: <FaHtml5 />
-  },
-  {
-    name: 'CSS3',
-    icon: <FaCss3Alt />
   },
   {
     name: 'React',
@@ -46,7 +39,19 @@ const stacks = [
   },
   {
     name: 'PostgreSQL',
-    icon: <img src={postgres} alt='PG icon'></img>
+    icon: <DiPostgresql />
+  },
+  {
+    name: 'GraphQL',
+    icon: <img src={graphql} alt='GraphQl icon' />
+  },
+  {
+    name: 'HTML',
+    icon: <FaHtml5 />
+  },
+  {
+    name: 'CSS3',
+    icon: <FaCss3Alt />
   }
 ];
 
