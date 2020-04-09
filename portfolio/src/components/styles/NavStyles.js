@@ -20,16 +20,15 @@ const Links = styled.nav`
   }
   @media ${device.laptop} {
     a {
-      font-size: 20px;
-      margin: 0 50px;
-      padding: 0 20px;
+      font-size: 1.5rem;
+      padding: 0 10px;
     }
   }
 `;
 
 export const VerticalNavStyle = styled(Links)`
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
   margin: 20px 0;
   // position: fixed;
   // margin-right: 80px;

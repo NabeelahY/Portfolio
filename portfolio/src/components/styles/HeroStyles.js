@@ -10,7 +10,7 @@ export const HeroWrap = styled.div`
 export const HeroStyle = styled.div`
   display: flex;
   align-items: baseline;
-  margin-top: 100px;
+  margin-top: 60px;
   h1 {
     font-family: 'Righteous', cursive;
     font-size: 6rem;
@@ -30,6 +30,11 @@ export const HeroStyle = styled.div`
       font-size: 4rem;
     }
   }
+`;
+
+export const HeroSocial = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const TagLine = styled.div`
