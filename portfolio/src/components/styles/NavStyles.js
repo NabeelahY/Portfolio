@@ -3,7 +3,7 @@ import { device } from './devices';
 
 const Links = styled.nav`
   a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0 15px;
     color: #fff;
 
