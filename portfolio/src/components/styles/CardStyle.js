@@ -11,6 +11,12 @@ export const ProjectWrapper = styled.div`
   background: rgba(156, 195, 213, 0.5);
   border-radius: 5px;
   max-width: 400px;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    max-width: 100%;
+    height: 100%;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -26,7 +32,7 @@ export const CardWrapper = styled.div`
     top: 0;
     left: 0;
     transform: rotate(0deg);
-    a {
+    a.link {
       right: 0;
       transition-delay: 400ms;
     }
@@ -58,7 +64,22 @@ export const CardWrapper = styled.div`
       line-height: 2;
       text-align: center;
     }
-    a {
+    a.git {
+      position: absolute;
+      left: 0;
+      text-align: center;
+      padding: 5px;
+      color: #000;
+      width: 100px;
+      border-radius: 5px;
+      margin: 8px auto;
+      font-size: 18px;
+
+      &:hover {
+        color: #1cb5e0;
+      }
+    }
+    a.link {
       position: absolute;
       left: 0;
       text-align: center;
@@ -82,7 +103,7 @@ export const CardWrapper = styled.div`
       div {
         font-size: 16px;
       }
-      a {
+      a.link {
         padding: 8px;
       }
     }

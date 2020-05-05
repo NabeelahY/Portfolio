@@ -61,8 +61,8 @@ const About = () => {
       <AboutImg />
       <ContentStyle>
         A passionate software engineer based in Lagos, Nigeria. If I am not on
-        my desk trying to hack out coding challenges, I'm probably neck-deep
-        in a fantasy-genre novel or exploring new donut cafes.
+        my desk trying to hack j out coding challenges, I'm probably neck-deep
+        in a fantasy-genre novel or exploring new cafes.
         <>
           <h3>Stacks include:</h3>
           <StackStyle>

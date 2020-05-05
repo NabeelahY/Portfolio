@@ -11,15 +11,17 @@ const projects = [
     img: wtc,
     desc:
       'WhereToCode is targeted at remote software developers looking for places to work and code on the go.',
-    link: 'https://wheretocode.com'
+    link: 'https://wheretocode.com',
+    github: 'https://github.com/where-to-code'
   },
 
   {
     name: 'Bookr',
     img: bookr,
     desc:
-      'Bookr is your source for all things Text Book. Picture the AirBNB of textbooks, a social platform for peer-reviewed textbooks',
-    link: 'https://bookrlambda.netlify.com/'
+      'Bookr is your source for all things textbooks, a social platform for peer-reviewed textbooks',
+    link: 'https://bookrlambda.netlify.com/',
+    github: 'https://github.com/bookr-buildweek/Back-End'
   },
 
   {
@@ -27,7 +29,8 @@ const projects = [
     img: mentorme,
     desc:
       'MentorMe lets you lend your business skills to an entrepreneurs across the globe',
-    link: 'https://mentorme-eu.netlify.com/home'
+    link: 'https://mentorme-eu.netlify.com/home',
+    github: 'https://github.com/mentorme-app'
   }
 ];
 
