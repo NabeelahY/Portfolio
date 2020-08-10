@@ -6,9 +6,13 @@ export const GlobalStyle = createGlobalStyle`
    License: none (public domain)
   */
   html, body { 
-    font-family: 'Dosis', sans-serif;
-    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100%;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   } 
+
   div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -28,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+    color: #fff;
     
   }
   /* HTML5 display-role reset for older browsers */
@@ -42,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+
   blockquote, q {
     quotes: none;
   }
