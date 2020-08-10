@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
    License: none (public domain)
   */
   html, body { 
+    height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100%;
     background: #000000;  /* fallback for old browsers */
