@@ -7,12 +7,17 @@ export const ProjectStyles = styled.section`
   align-items: center;
   padding: 20px;
 
+  h1 {
+    font-size: 1.4rem;
+  }
+
   .ant-card {
     margin: 10px 0;
     &.content {
       color: #fff;
       background-color: #434343;
     }
+
     .ant-card-meta-detail {
       .ant-card-meta-description,
       .ant-card-meta-title {

@@ -7,25 +7,24 @@ const { Meta } = Card;
 const Projects: React.FC = () => {
   const projects = [
     {
+      name: 'Support Ticket System API',
+      desc: 'A customer support ticketing system',
+      link: 'https://github.com/NabeelahY/support_ticket_system',
+      github: 'https://github.com/NabeelahY/support_ticket_system',
+    },
+    {
       name: 'Where To Code',
       desc:
         'WhereToCode is targeted at remote software developers looking for places to work and code on the go.',
       link: 'https://wheretocode.com',
       github: 'https://github.com/where-to-code',
     },
-
     {
       name: 'Bookr API',
       desc:
         'Bookr is your source for all things textbooks, a social platform for peer-reviewed textbooks',
       link: 'https://github.com/bookr-buildweek/Back-End',
       github: 'https://github.com/bookr-buildweek/Back-End',
-    },
-    {
-      name: 'Support Ticket System API',
-      desc: 'A customer support ticketing system',
-      link: 'https://github.com/NabeelahY/support_ticket_system',
-      github: 'https://github.com/NabeelahY/support_ticket_system',
     },
     {
       name: 'Reddit Mini Clone',
