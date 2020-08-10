@@ -10,7 +10,6 @@ import {
 import { DiPostgresql, DiIonic } from 'react-icons/di';
 import graphql from '../assets/graphql.svg';
 import { StackStyles, IconStyles } from './styles/Stack';
-import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 
 const stacks = [
