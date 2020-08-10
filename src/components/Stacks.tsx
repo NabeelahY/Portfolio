@@ -7,7 +7,7 @@ import {
   FaNode,
   FaPython,
 } from 'react-icons/fa';
-import { DiPostgresql } from 'react-icons/di';
+import { DiPostgresql, DiIonic } from 'react-icons/di';
 import graphql from '../assets/graphql.svg';
 import { StackStyles, IconStyles } from './styles/Stack';
 import 'antd/dist/antd.css';
@@ -21,6 +21,10 @@ const stacks = [
   {
     name: 'React',
     icon: <FaReact />,
+  },
+  {
+    name: 'Ionic React',
+    icon: <DiIonic />,
   },
   {
     name: 'Python',

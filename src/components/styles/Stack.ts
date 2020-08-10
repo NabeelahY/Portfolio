@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StackStyles = styled.section`
   padding: 20px;
   text-align: center;
-  height: 300px;
+
   h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -12,7 +12,6 @@ export const StackStyles = styled.section`
 
   .ant-carousel .slick-slider {
     margin: 20px 0;
-    height: 100%;
     &.slide {
       height: 200px;
     }
@@ -29,10 +28,9 @@ export const IconStyles = styled.div`
     font-size: 5rem;
   }
   img {
-    height: 5rem;
+    height: 8rem;
     margin: 0 auto;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 30px 0;
     fill: #fff;
-
   }
 `;
