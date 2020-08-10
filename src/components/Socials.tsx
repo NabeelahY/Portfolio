@@ -17,7 +17,7 @@ const links = [
     icon: <FaDev />,
   },
 ];
-const Socials = () => {
+const Socials: React.FC = () => {
   return (
     <SocialStyles>
       {links.map((link, idx) => (
