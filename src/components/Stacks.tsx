@@ -9,6 +9,9 @@ import {
 } from 'react-icons/fa';
 import { DiPostgresql } from 'react-icons/di';
 import graphql from '../assets/graphql.svg';
+import { StackStyles, IconStyles } from './styles/Stack';
+import 'antd/dist/antd.css';
+import { Carousel } from 'antd';
 
 const stacks = [
   {
@@ -51,17 +54,17 @@ const stacks = [
 
 const Stacks: React.FC = () => {
   return (
-    <section>
+    <StackStyles>
       <h1>Tech I have used</h1>
-      <div>
+      <Carousel autoplay adaptiveHeight={true} className='slide'>
         {stacks.map((stack, idx) => (
-          <div key={idx}>
+          <IconStyles key={idx}>
             <div>{stack.icon}</div>
-            <div>{stack.name}</div>
-          </div>
+            <p>{stack.name}</p>
+          </IconStyles>
         ))}
-      </div>
-    </section>
+      </Carousel>
+    </StackStyles>
   );
 };
 
