@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeroStyle } from './styles/Hero';
 import img from '../assets/nab_bg.png';
+import Socials from './Socials';
 
 const Hero: React.FC = () => {
   return (
@@ -24,6 +25,8 @@ const Hero: React.FC = () => {
         <div className="pic">
           <img src={img} alt="Nabeelah Yousuph" />
         </div>
+
+        <Socials />
       </div>
     </HeroStyle>
   );
