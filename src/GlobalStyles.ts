@@ -4,16 +4,9 @@ export const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-  */
-  html, body { 
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 100%;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  } 
+  */ 
 
-  div, span, applet, object, iframe,
+  html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp,
@@ -29,11 +22,20 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
     color: #fff;
     
+  }
+
+  body { 
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(180deg, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(180deg, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
