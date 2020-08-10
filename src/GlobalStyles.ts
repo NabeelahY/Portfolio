@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
    v2.0 | 20110126
    License: none (public domain)
   */
- @import '~antd/dist/antd.css';
   html, body { 
     font-family: 'Dosis', sans-serif;
     font-size: 62.5%;
