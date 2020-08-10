@@ -55,8 +55,13 @@ const stacks = [
 const Stacks: React.FC = () => {
   return (
     <StackStyles>
-      <h1>Tech I have used</h1>
-      <Carousel autoplay adaptiveHeight={true} className='slide'>
+      <h1>Work with:</h1>
+      <Carousel
+        autoplay
+        adaptiveHeight={true}
+        className="slide"
+        slidesToShow={2}
+      >
         {stacks.map((stack, idx) => (
           <IconStyles key={idx}>
             <div>{stack.icon}</div>
