@@ -25,6 +25,14 @@ export const ProjectStyles = styled.section`
       }
     }
 
+    .ant-card-meta-description {
+      p {
+        color: #ccc;
+        font-size: 0.8rem;
+        padding: 10px 0;
+      }
+    }
+
     .ant-card-actions {
       .anticon {
         &.icon {

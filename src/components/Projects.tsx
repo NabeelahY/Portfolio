@@ -11,6 +11,14 @@ const Projects: React.FC = () => {
       desc: 'A customer support ticketing system',
       link: 'https://github.com/NabeelahY/support_ticket_system',
       github: 'https://github.com/NabeelahY/support_ticket_system',
+      stack: 'TypeScript, MongoDB, NodeJS, ExpressJS, Jest',
+    },
+    {
+      name: 'Textractor',
+      desc: 'App to extract text from images and download as .txt files',
+      link: 'https://develop.d15mzgyv498byw.amplifyapp.com/',
+      github: 'https://github.com/NabeelahY/aws-react',
+      stack: 'TypeScript, React, AWS Amplify, AWS Lambda, AWS Rekognition, S3',
     },
     {
       name: 'Where To Code',
@@ -18,6 +26,8 @@ const Projects: React.FC = () => {
         'WhereToCode is targeted at remote software developers looking for places to work and code on the go.',
       link: 'https://wheretocode.com',
       github: 'https://github.com/where-to-code',
+      stack:
+        'JavaScript, React/Redux, PostgreSQL, NodeJS, ExpressJS, Google Map API',
     },
     {
       name: 'Bookr API',
@@ -25,12 +35,14 @@ const Projects: React.FC = () => {
         'Bookr is your source for all things textbooks, a social platform for peer-reviewed textbooks',
       link: 'https://github.com/bookr-buildweek/Back-End',
       github: 'https://github.com/bookr-buildweek/Back-End',
+      stack: 'JavaScript, PostgreSQL, NodeJS, ExpressJS, Jest',
     },
     {
       name: 'Reddit Mini Clone',
       desc: 'Frontend to consume the Reddit API',
       link: 'https://reddit-mini-clone.netlify.app/',
       github: 'https://github.com/NabeelahY/reddit-spa',
+      stack: 'TypeScript, React/Redux, React Bootstrap',
     },
   ];
 
@@ -61,7 +73,17 @@ const Projects: React.FC = () => {
               />,
             ]}
           >
-            <Meta title={project.name} description={project.desc} />
+            <Meta
+              title={project.name}
+              description={
+                <>
+                  <p >
+                    Stack: {project.stack}
+                  </p>
+                  <div>{project.desc}</div>
+                </>
+              }
+            />
           </Card>
         ))}
       </div>
