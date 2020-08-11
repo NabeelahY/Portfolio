@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const HeroStyle = styled.header`
   font-size: 1.2rem;
-  padding: 20px 0;
-
+  
   .hero,
   .info {
     display: flex;
