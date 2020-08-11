@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactStyles = styled.section`
-  padding: 20px;
-
+  padding: 20px 0; 
   h1 {
     font-size: 1.4rem;
     margin: 20px 0 10px 0;

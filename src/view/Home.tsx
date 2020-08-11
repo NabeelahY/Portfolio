@@ -6,13 +6,17 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+import { HomeStyles } from './styles/Home';
+
 const Home: React.FC = () => {
   return (
     <>
-      <Hero />
-      <Stacks />
-      <Projects />
-      <Contact />
+      <HomeStyles>
+        <Hero />
+        <Stacks />
+        <Projects />
+        <Contact />
+      </HomeStyles>
       <Footer />
     </>
   );
