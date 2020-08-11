@@ -16,4 +16,12 @@ export const SocialStyles = styled.nav`
       background-size: 100% 1px;
     }
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin: 20px 0;
+    }
+  }
 `;

@@ -8,6 +8,7 @@ export const StackStyles = styled.section`
     font-size: 1.4rem;
     font-weight: bold;
     margin: 10px 0;
+    text-decoration: underline solid #ec3c37;
   }
 
   .ant-carousel .slick-slider {

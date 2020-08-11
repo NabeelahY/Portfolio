@@ -6,6 +6,7 @@ export const ContactStyles = styled.section`
     font-size: 1.4rem;
     margin: 20px 0 10px 0;
     text-align: center;
+    text-decoration: underline solid #ec3c37;
   }
 
   .ant-alert-description {
