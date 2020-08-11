@@ -24,12 +24,12 @@ const Hero: React.FC = () => {
 
           <p>
             A passionate software engineer based in Lagos, Nigeria. AWS
-            certified and loves to experiment and dabble with various
+            certified and loves to experiment with various
             technologies.
           </p>
           <button
             onClick={() => {
-              window.open(link, '_blank', ' noopener noreferrer');
+              window.open(link);
             }}
           >
             Get Resume
