@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { BurgerNavStyles } from './styles/Nav';
 
 const BugerNav: React.FC<{ open: any }> = ({ open }) => {
