@@ -58,7 +58,6 @@ const Projects: React.FC = () => {
           <Card
             className="content"
             key={idx}
-            hoverable={true}
             bordered={false}
             actions={[
               <GithubOutlined

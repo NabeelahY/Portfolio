@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
@@ -36,7 +36,9 @@ export const GlobalStyle = createGlobalStyle`
     background: #000000;  /* fallback for old browsers */
     background-image: -webkit-linear-gradient(180deg, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background-image: linear-gradient(180deg, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
   }
+
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {

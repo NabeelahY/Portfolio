@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 import { DiPostgresql, DiIonic } from 'react-icons/di';
 import graphql from '../assets/graphql.svg';
+import ts from '../assets/ts.svg';
 import { StackStyles, IconStyles } from './styles/Stack';
 import { Carousel } from 'antd';
 
@@ -16,6 +17,10 @@ const stacks = [
   {
     name: 'JavaScript',
     icon: <FaJs />,
+  },
+  {
+    name: 'TypeScript',
+    icon: <img src={ts} alt="TypeScript icon" />,
   },
   {
     name: 'React',
