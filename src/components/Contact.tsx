@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
         span: 24,
       },
       sm: {
-        span: 8,
+        span: 4,
       },
     },
     wrapperCol: {
@@ -26,6 +26,15 @@ const Contact: React.FC = () => {
         span: 24,
       },
       sm: {
+        span: 16,
+      },
+    },
+  };
+
+  const btnLayout = {
+    wrapperCol: {
+      sm: {
+        offset: 4,
         span: 16,
       },
     },
@@ -144,7 +153,7 @@ const Contact: React.FC = () => {
         >
           <Input.TextArea />
         </Form.Item>
-        <Form.Item>
+        <Form.Item {...btnLayout}>
           <Button type="ghost" htmlType="submit" block loading={loading}>
             Submit
           </Button>

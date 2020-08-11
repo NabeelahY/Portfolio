@@ -68,7 +68,8 @@ const Stacks: React.FC = () => {
         autoplay
         adaptiveHeight={true}
         className="slide"
-        slidesToShow={2}
+        slidesToShow={3}
+        speed={300}
       >
         {stacks.map((stack, idx) => (
           <IconStyles key={idx}>
