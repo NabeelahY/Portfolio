@@ -6,9 +6,10 @@ export const ProjectStyles = styled.section`
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0;
-  
+
   h1 {
     font-size: 1.4rem;
+    text-decoration: underline solid #ec3c37;
   }
 
   .ant-card {
@@ -37,7 +38,7 @@ export const ProjectStyles = styled.section`
       .anticon {
         &.icon {
           &:hover {
-            color: #000;
+            color: #ec3c37;
           }
         }
       }
