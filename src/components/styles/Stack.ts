@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StackStyles = styled.section`
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 
   h1 {

@@ -5,8 +5,8 @@ export const ProjectStyles = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
-
+  padding: 20px 0;
+  
   h1 {
     font-size: 1.4rem;
   }
