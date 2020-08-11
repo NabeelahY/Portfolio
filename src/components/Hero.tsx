@@ -4,23 +4,36 @@ import img from '../assets/nab_bg.png';
 import Socials from './Socials';
 
 const Hero: React.FC = () => {
+  const link =
+    'https://docs.google.com/document/d/1CXBIXt-V3c1So7yRu10hqqHY6gbbKwxCbJWB5J35j38/export?format=pdf';
   return (
     <HeroStyle>
       <div className="hero">
         <div className="info">
-          <div>
+          <div className="greeting">
             Hello{' '}
             <span role="img" aria-label="wave">
               👋🏾
             </span>
           </div>
-          <h1>I am Nabeelah Yousuph</h1>
+
+          <div className="intro">
+            <div>I am </div>
+            <h1>Nabeelah Yousuph</h1>
+          </div>
+
           <p>
             A passionate software engineer based in Lagos, Nigeria. AWS
             certified and loves to experiment and dabble with various
             technologies.
           </p>
-          <button>Get Resume</button>
+          <button
+            onClick={() => {
+              window.open(link, '_blank', ' noopener noreferrer');
+            }}
+          >
+            Get Resume
+          </button>
         </div>
         <div className="pic">
           <img src={img} alt="Nabeelah Yousuph" />
