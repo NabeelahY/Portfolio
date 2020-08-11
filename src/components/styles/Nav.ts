@@ -8,7 +8,7 @@ export const NavStyles = styled.nav`
   .menuBtn {
     position: absolute;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 0;
     margin: -5px 0;
     height: 30px;
     width: 30px;
@@ -38,6 +38,12 @@ export const NavStyles = styled.nav`
           transform: rotate(-45deg);
         }
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .menuBtn {
+      display: none;
     }
   }
 `;
@@ -81,6 +87,16 @@ export const BurgerNavStyles = styled.ul`
 
     a {
       color: #fff;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    overflow-y: visible;
+
+    li {
+      background: transparent;
+      margin: 0;
     }
   }
 `;
