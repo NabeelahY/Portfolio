@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form, Input, Button, Alert } from 'antd';
 import { ContactStyles } from './styles/Contact';
 
 const Contact: React.FC = () => {
@@ -32,16 +32,69 @@ const Contact: React.FC = () => {
   };
 
   const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState({
+    type: '',
+    message: '',
+  });
+  const [form] = Form.useForm();
 
-  const handleSubmit = (values: any) => {
-    console.log(values);
+  const handleClose = () => {
+    setResponse({
+      type: '',
+      message: '',
+    });
   };
 
-  const [form] = Form.useForm();
-  console.log(form);
+  const handleSubmit = async (values: any) => {
+    setLoading(true);
+    const val = { ...initialVals, ...values };
+    const res = await fetch('https://api.staticforms.xyz/submit', {
+      method: 'POST',
+      body: JSON.stringify(val),
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    const json = await res.json();
+
+    json.success
+      ? setResponse({
+          type: 'success',
+          message:
+            "Thanks for reaching out. I'll get back to you as soon as possible!",
+        })
+      : setResponse({
+          type: 'error',
+          message: json.message,
+        });
+
+    setLoading(false);
+    form.resetFields();
+  };
 
   return (
     <ContactStyles>
+      {response.type === 'success' ? (
+        <Alert
+          message="Success"
+          description={response.message}
+          type="success"
+          showIcon
+          closable
+          onClose={handleClose}
+        />
+      ) : response.type === 'error' ? (
+        <Alert
+          message="Error"
+          description={response.message}
+          type="error"
+          showIcon
+          closable
+          onClose={handleClose}
+        />
+      ) : (
+        ''
+      )}
+
       <h1>Contact Me</h1>
 
       <Form
@@ -92,7 +145,7 @@ const Contact: React.FC = () => {
           <Input.TextArea />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" htmlType="submit">
+          <Button type="ghost" htmlType="submit" block loading={loading}>
             Submit
           </Button>
         </Form.Item>
