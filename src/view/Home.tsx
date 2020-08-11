@@ -1,4 +1,5 @@
 import React from 'react';
+import { BackTop } from 'antd';
 
 import Hero from '../components/Hero';
 import Stacks from '../components/Stacks';
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
         <Stacks />
         <Projects />
         <Contact />
+        <BackTop />
       </HomeStyles>
       <Footer />
     </>
