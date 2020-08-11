@@ -97,6 +97,17 @@ export const BurgerNavStyles = styled.ul`
     li {
       background: transparent;
       margin: 0;
+      a {
+        background-image: linear-gradient(#ec3c37, #ec3c37);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.5s;
+        &:hover,
+        &:focus {
+          background-size: 100% 3px;
+        }
+      }
     }
   }
 `;

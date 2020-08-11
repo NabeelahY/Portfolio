@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavStyles } from './styles/Nav';
-import BugerNav from './BugerNav';
+import BurgerNav from './BurgerNav';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ const Nav = () => {
         <span className={open ? 'bar active' : 'bar'}></span>
         <span className={open ? 'bar active' : 'bar'}></span>
       </button>
-      <BugerNav open={open} />
+      <BurgerNav open={open} />
     </NavStyles>
   );
 };

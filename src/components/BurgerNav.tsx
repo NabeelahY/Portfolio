@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import { BurgerNavStyles } from './styles/Nav';
 
-const BugerNav: React.FC<{ open: any }> = ({ open }) => {
+const BurgerNav: React.FC<{ open: any }> = ({ open }) => {
   const menu = ['Stack', 'Projects', 'Contact'];
   return (
     <BurgerNavStyles className={open ? 'open' : ''}>
@@ -24,4 +24,4 @@ const BugerNav: React.FC<{ open: any }> = ({ open }) => {
   );
 };
 
-export default BugerNav;
+export default BurgerNav;
