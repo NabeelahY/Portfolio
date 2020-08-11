@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <ContactStyles>
+    <ContactStyles id="Contact">
       {response.type === 'success' ? (
         <Alert
           message="Success"

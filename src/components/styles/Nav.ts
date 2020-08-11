@@ -78,5 +78,9 @@ export const BurgerNavStyles = styled.ul`
     border-radius: 10px;
     transform-origin: top center;
     animation: ${slideDown} 1s ease-in-out forwards;
+
+    a {
+      color: #fff;
+    }
   }
 `;

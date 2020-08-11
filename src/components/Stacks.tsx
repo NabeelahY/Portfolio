@@ -62,7 +62,7 @@ const stacks = [
 
 const Stacks: React.FC = () => {
   return (
-    <StackStyles>
+    <StackStyles id='Stack'>
       <h1>Work with:</h1>
       <Carousel
         autoplay

@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <ProjectStyles>
+    <ProjectStyles id='Projects'>
       <h1>Recent Projects</h1>
       <div>
         {projects.map((project, idx) => (
