@@ -35,11 +35,12 @@ const Hero: React.FC = () => {
             Get Resume
           </button>
         </div>
-        <div className="pic">
-          <img src={img} alt="Nabeelah Yousuph" />
+        <div className="graphics">
+          <div className="pic">
+            <img src={img} alt="Nabeelah Yousuph" />
+          </div>
+          <Socials />
         </div>
-
-        <Socials />
       </div>
     </HeroStyle>
   );
