@@ -15,4 +15,8 @@ export const HomeStyles = styled.main`
   @media (min-width: 768px) {
     margin: 0 auto;
   }
+
+  @media (min-width: 1024px) {
+    width: 900px;
+  }
 `;

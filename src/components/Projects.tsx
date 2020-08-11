@@ -51,9 +51,9 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <ProjectStyles id='Projects'>
+    <ProjectStyles id="Projects">
       <h1>Recent Projects</h1>
-      <div>
+      <div className="work">
         {projects.map((project, idx) => (
           <Card
             className="content"
@@ -76,9 +76,7 @@ const Projects: React.FC = () => {
               title={project.name}
               description={
                 <>
-                  <p >
-                    Stack: {project.stack}
-                  </p>
+                  <p>Stack: {project.stack}</p>
                   <div>{project.desc}</div>
                 </>
               }
