@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { BurgerNavStyles } from './styles/Nav';
 
 const BurgerNav: React.FC<{ open: any }> = ({ open }) => {
-  const menu = ['Stack', 'Projects', 'Contact'];
+  const menu = ['Stacks', 'Projects', 'Contact'];
   return (
     <BurgerNavStyles className={open ? 'open' : ''}>
       {menu.map((item, idx) => (

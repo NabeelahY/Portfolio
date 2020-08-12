@@ -62,8 +62,8 @@ const stacks = [
 
 const Stacks: React.FC = () => {
   return (
-    <StackStyles id='Stack'>
-      <h1>Work with:</h1>
+    <StackStyles id='Stacks'>
+      <h1>I work with:</h1>
       <Carousel
         autoplay
         adaptiveHeight={true}

@@ -38,6 +38,7 @@ export const HeroStyle = styled.header`
     }
     p {
       line-height: 2rem;
+      font-size: 1rem;
     }
 
     button {

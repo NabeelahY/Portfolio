@@ -24,8 +24,9 @@ const Hero: React.FC = () => {
 
           <p>
             A passionate software engineer based in Lagos, Nigeria. AWS
-            certified and loves to experiment with various
-            technologies.
+            certified and loves to experiment with various technologies. If I am
+            not on my desk trying to hack out coding challenges, I'm probably
+            neck-deep in a fantasy-genre novel or exploring new cafes.
           </p>
           <button
             onClick={() => {
