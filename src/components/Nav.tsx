@@ -6,7 +6,12 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   return (
     <NavStyles>
-      <button className="menuBtn" type="button" onClick={() => setOpen(!open)}>
+      <button
+        className="menuBtn"
+        type="button"
+        aria-label="Menu button"
+        onClick={() => setOpen(!open)}
+      >
         <span className={open ? 'bar active' : 'bar'}></span>
         <span className={open ? 'bar active' : 'bar'}></span>
         <span className={open ? 'bar active' : 'bar'}></span>
