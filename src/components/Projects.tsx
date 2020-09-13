@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
     },
     {
       name: 'Reddit Mini Clone',
-      desc: 'Frontend to consume the Reddit API',
+      desc: 'Frontend to consume the Reddit API. Users can see lists of posts grouped by their subreddits and be able to search and sort through posts.',
       link: 'https://reddit-mini-clone.netlify.app/',
       github: 'https://github.com/NabeelahY/reddit-spa',
       stack: 'TypeScript, React/Redux, React Bootstrap',

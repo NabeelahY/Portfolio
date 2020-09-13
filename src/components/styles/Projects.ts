@@ -60,7 +60,7 @@ export const ProjectStyles = styled.section`
         width: 40%;
         margin: 10px;
         .ant-card-body {
-          height: 200px;
+          height: 220px;
         }
       }
     }
