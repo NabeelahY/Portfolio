@@ -8,14 +8,15 @@ const Projects: React.FC = () => {
   const projects = [
     {
       name: 'Support Ticket System API',
-      desc: 'A customer support ticketing system',
+      desc:
+        'A customer support ticketing system. The system allows customers to be able to place support requests, and support agents to process the request',
       link: 'https://github.com/NabeelahY/support_ticket_system',
       github: 'https://github.com/NabeelahY/support_ticket_system',
       stack: 'TypeScript, MongoDB, NodeJS, ExpressJS, Jest',
     },
     {
       name: 'Textractor',
-      desc: 'App to extract text from images and download as .txt files',
+      desc: 'App to extract text from images and download as .txt files. Users can use this app to upload images they would like to extract text from.',
       link: 'https://develop.d15mzgyv498byw.amplifyapp.com/',
       github: 'https://github.com/NabeelahY/aws-react',
       stack: 'TypeScript, React, AWS Amplify, AWS Lambda, AWS Rekognition, S3',
@@ -24,7 +25,7 @@ const Projects: React.FC = () => {
       name: 'Where To Code',
       desc:
         'WhereToCode is targeted at remote software developers looking for places to work and code on the go.',
-      link: 'https://wheretocode.com',
+      link: 'https://youtu.be/GRBEZQ1l0q4',
       github: 'https://github.com/where-to-code',
       stack:
         'JavaScript, React/Redux, PostgreSQL, NodeJS, ExpressJS, Google Map API',
